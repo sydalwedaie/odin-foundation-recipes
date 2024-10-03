@@ -1,0 +1,17 @@
+<section>
+  <h1>{{name}}</h1>
+  <img src='/src/assets/img/{{makeID name}}.webp' alt='{{name}}' />
+  <h2>Ingredients:</h2>
+  <ul>
+    {{#each ingredients as |ingredient|}}
+      <li>{{ingredient}}</li>
+    {{/each}}
+  </ul>
+
+  <h2>Steps:</h2>
+  <ol>
+    {{#each steps as |step|}}
+      <li>{{step}}</li>
+    {{/each}}
+  </ol>
+</section>

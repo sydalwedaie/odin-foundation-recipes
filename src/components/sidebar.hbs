@@ -1,0 +1,13 @@
+<aside>
+  <h1>Available Recipes</h1>
+  <ul id='recipes-list'>
+    {{#each recipes as |recipe|}}
+      <li><a
+          href='/src/pages/{{makeID recipe.name}}.html'
+        >{{recipe.name}}</a></li>
+    {{/each}}
+  </ul>
+  <ul>
+    <li><a href='/'>Home</a></li>
+  </ul>
+</aside>

@@ -1,0 +1,9 @@
+<section>
+  <h1>Home of Recipes</h1>
+  <p>Select the desired recipe from the sidebar.</p>
+  {{#each recipes as |recipe|}}
+    <div>
+      <img src='/src/assets/img/{{makeID name}}.webp' alt='{{recipe.name}}' />
+    </div>
+  {{/each}}
+</section>

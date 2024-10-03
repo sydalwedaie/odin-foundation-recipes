@@ -11,6 +11,7 @@ export default {
       ],
       context: data,
       helpers: {
+        makeID: name => name.toLowerCase().split(' ').join('-'),
         times: function (n, block) {
           let accum = '';
           for (let i = 0; i < n; ++i) {

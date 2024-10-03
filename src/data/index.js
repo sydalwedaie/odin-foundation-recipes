@@ -13,7 +13,7 @@ export const data = {
         '4 tablespoons cold butter, cut into small pieces',
         '1 tablespoon chicken broth (or water), if needed to thin sauce',
       ],
-      step: [
+      steps: [
         'Gather all ingredients.',
         'Season chicken on both sides with salt and pepper.',
         'Heat olive oil in a heavy skillet over medium-high heat until it starts to shimmer. Place chicken breasts skin-side down in the skillet. ',
@@ -39,7 +39,7 @@ export const data = {
         '8 ounces sugar snap peas',
         '½ cup toasted pecans',
       ],
-      step: [
+      steps: [
         'In a medium bowl, prepare the dressing according to package directions, using vinegar and oil, and substituting orange juice for the water; set aside.',
         'Preheat the grill for high heat.',
         'Lightly oil the grill grate. Grill the chicken 6 to 8 minutes on each side, or until juices run clear. Remove from heat, cool, and slice into strips.',
