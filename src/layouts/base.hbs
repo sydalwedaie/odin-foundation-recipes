@@ -7,8 +7,12 @@
     <title>{{title}}</title>
   </head>
   <body class="">
-    {{> sidebar }}
-    {{> @partial-block }}
+    {{> header }}
+    <div class="container">
+      {{> sidebar }}
+      {{> @partial-block }}
+    </div>
+    {{> footer }}
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>

@@ -2,9 +2,10 @@
   <h1>Available Recipes</h1>
   <ul id='recipes-list'>
     {{#each recipes as |recipe|}}
-      <li><a
-          href='/src/pages/{{makeID recipe.name}}.html'
-        >{{recipe.name}}</a></li>
+      <li><a href='/src/pages/{{makeID recipe.name}}.html'><img
+            src='/src/assets/img/{{makeID name}}.webp'
+            alt=''
+          /><span>{{recipe.name}}</span></a></li>
     {{/each}}
   </ul>
   <ul>
