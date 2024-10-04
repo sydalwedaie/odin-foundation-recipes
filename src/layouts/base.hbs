@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="/src/index.css" />
     <title>{{title}}</title>
   </head>
-  <body class="">
+  <body class="flex h-[100vh] flex-col justify-between items-center">
     {{> header }}
-    <div class="container">
-      {{> sidebar }}
-      {{> @partial-block }}
-    </div>
-    {{> footer }}
+      <div
+        class="m-4 flex max-w-[950px] flex-1 overflow-hidden rounded-2xl shadow-xl border-4 border-green-400"
+      >
+        {{> sidebar }}
+        <main class="flex-1 overflow-scroll bg-green-50">{{> @partial-block }}</main>
+      </div>
+      {{> footer }}
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>

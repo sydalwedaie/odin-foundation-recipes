@@ -1,14 +1,31 @@
-<aside>
-  <h1>Available Recipes</h1>
-  <ul id='recipes-list'>
+<aside class="flex-[0.5] bg-green-400 p-4 text-green-900">
+  <ul>
+    <li>
+      <a
+        href="/"
+        class="block rounded-2xl p-4 text-xl font-bold hover:bg-green-500 hover:text-green-800"
+      >Home
+      </a>
+    </li>
+  </ul>
+  <h1 class="my-4 ml-4 text-xl font-semibold">Available Recipes</h1>
+  <ul id="recipes-list" class="flex flex-col gap-1">
     {{#each recipes as |recipe|}}
-      <li><a href='/src/pages/{{makeID recipe.name}}.html'><img
-            src='/src/assets/img/{{makeID name}}.webp'
-            alt=''
-          /><span>{{recipe.name}}</span></a></li>
+      <li>
+        <a
+          href="/src/pages/{{makeID recipe.name}}.html"
+          id="{{makeID recipe.name}}"
+          class="sidebar-link flex items-center gap-2 rounded-2xl p-1 hover:bg-green-500"
+        >
+          <img
+            src="/src/assets/img/{{makeID name}}.webp"
+            alt="{{recipe.name}}"
+            class="aspect-square w-14 rounded-xl border-2 border-white object-cover shadow-md"
+          />
+          <p>{{recipe.name}}</p>
+        </a>
+      </li>
     {{/each}}
   </ul>
-  <ul>
-    <li><a href='/'>Home</a></li>
-  </ul>
+
 </aside>

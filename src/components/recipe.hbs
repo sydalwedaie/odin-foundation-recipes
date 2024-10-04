@@ -1,17 +1,23 @@
 <section>
-  <h1>{{name}}</h1>
-  <img src='/src/assets/img/{{makeID name}}.webp' alt='{{name}}' />
-  <h2>Ingredients:</h2>
-  <ul>
-    {{#each ingredients as |ingredient|}}
-      <li>{{ingredient}}</li>
-    {{/each}}
-  </ul>
+  <img
+    src="/src/assets/img/{{makeID name}}.webp"
+    alt="{{name}}"
+    class="aspect-[5/3] w-full object-cover"
+  />
+  <div class="p-4">
+    <h1 class="text-4xl">{{name}}</h1>
+    <h2 class="text-2xl">Ingredients:</h2>
+    <ul class="mb-4 ml-6">
+      {{#each ingredients as |ingredient|}}
+        <li class="list-disc">{{ingredient}}</li>
+      {{/each}}
+    </ul>
 
-  <h2>Steps:</h2>
-  <ol>
-    {{#each steps as |step|}}
-      <li>{{step}}</li>
-    {{/each}}
-  </ol>
+    <h2 class="text-2xl">Steps:</h2>
+    <ol class="ml-6">
+      {{#each steps as |step|}}
+        <li class="list-decimal">{{step}}</li>
+      {{/each}}
+    </ol>
+  </div>
 </section>
